@@ -7,6 +7,6 @@ Epoch 4: train acc=0.9871, test acc=0.9761
 Epoch 5: train acc=0.9922, test acc=0.9794
 
 
-We can see that the training accuracy keeps improving as the number of epochs increases. However, the testing accuracy stalls at the 0.97 mark. This indicates that the model is overfitting, but the value is mild and not a problem.
+We can see that the training accuracy keeps improving as the number of epochs increases. However, the testing accuracy stalls at the 0.97 mark as the training accuracy improves. This indicates that the model is overfitting, but the value is mild and not a problem. A potential fix could be to stop training after 3 epochs.
 
-Furthermore, there is a dip in the testing accuracy at epoch 3. This amounts to approximately 40 images out of 10,000 training images. Mini-batch noise and Adam's updates can cause the swigs that size, so it can be ignored.
+Furthermore, there is a dip in the testing accuracy at epoch 3. This amounts to approximately 30 images out of 10,000 training images. Mini-batch noise and Adam's updates can cause the swigs that size, so it can be ignored.

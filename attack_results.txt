@@ -1,0 +1,19 @@
+Results
+
+Clean test accuracy: 98.99 % 
+
+Attack  eps	    ASR
+FGSM    0.05 	2.44%
+FGSM	0.1	    9.95%
+FGSM	0.2	    51.10%
+FGSM	0.3	    83.15%
+I-FGSM	0.05	3.46%
+I-FGSM	0.1	    25.49%
+I-FGSM	0.2	    99.38%
+I-FGSM	0.3	    100%
+MI-FGSM	0.05	2.83%
+MI-FGSM	0.1	    14.95%
+MI-FGSM	0.2	    89.18%
+MI-FGSM	0.3     99.73%
+
+The iterative I-FGSM is the strongest. FGSM is limited by its single step. MI-FGSM trails I-FGSM here because it uses a smaller step size.
